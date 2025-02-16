@@ -21,11 +21,14 @@
 				--text-color: #ffffff;
 				--button-border: rgba(255, 255, 255, 0.1);
 			}
-
+			html {
+				overflow-x: hidden;
+			}
 			body {
 				background-color: var(--dark-bg);
 				color: var(--text-color);
 				line-height: 1.5;
+				overflow-x: hidden;
 			}
 
 			.header {
@@ -34,10 +37,12 @@
 				justify-content: space-between;
 				align-items: center;
 				position: fixed;
-				width: 100%;
+				/* width: 100%; */
+				width: calc(100% - 0px);
 				background-color: rgba(18, 18, 18, 0.95);
 				z-index: 1000;
 				border-bottom: 1px solid var(--button-border);
+				box-sizing: border-box;
 			}
 
 			.logo {
@@ -300,6 +305,9 @@
 			}
 
 			@media (max-width: 768px) {
+				body {
+					overflow-x: hidden;
+				}
 				.header {
 					padding: 1.25rem 2rem;
 				}
@@ -647,7 +655,6 @@
 								src="./images/video2.mp4"
 								autoplay
 								loop
-								
 								style="width: 500px"></video>
 						</div>
 					</div>
