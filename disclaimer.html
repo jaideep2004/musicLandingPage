@@ -1,18 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link
 			rel="icon"
 			type="image/svg+xml"
 			href="./images/newlogo.jpg"
 			style="object-fit: cover" />
-		<title>SINGLEAUDIO: Digital Music Distribution</title>
-		<link
-			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-			rel="stylesheet" />
-
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Disclaimer</title>
 		<style>
 			* {
 				margin: 0;
@@ -27,12 +23,14 @@
 				--text-color: #ffffff;
 				--button-border: rgba(255, 255, 255, 0.1);
 			}
+
 			html {
 				overflow-x: hidden;
 			}
+
 			body {
-				background-color: var(--dark-bg);
-				color: var(--text-color);
+				/* background-color: var(--dark-bg); */
+				/* color: var(--text-color); */
 				line-height: 1.5;
 				overflow-x: hidden;
 			}
@@ -67,6 +65,7 @@
 				font-size: 0.9rem;
 				font-weight: 500;
 				letter-spacing: 0.5px;
+
 				&:hover {
 					color: var(--primary-color);
 				}
@@ -93,6 +92,7 @@
 				background-color: black;
 				color: white;
 			}
+
 			.sign-in-btn {
 				padding: 1rem 1.75rem;
 				border: 1px solid var(--button-border);
@@ -104,17 +104,20 @@
 				font-size: 0.9rem;
 				transition: all 0.3s ease;
 				border-color: var(--primary-color);
+
 				&:hover {
 					background-color: white;
 					color: black;
 				}
 			}
+
 			#phone-img {
 				position: absolute;
 				width: 220px;
 				right: 80px;
 				bottom: 10px;
 			}
+
 			.hero {
 				min-height: 100vh;
 				display: flex;
@@ -164,6 +167,7 @@
 				max-width: 1000px;
 				position: relative;
 			}
+
 			#laptop-img {
 				width: 800px;
 			}
@@ -189,6 +193,7 @@
 				padding-bottom: 60px;
 				justify-items: center;
 				align-content: center;
+
 				img {
 					width: 90px;
 				}
@@ -333,15 +338,19 @@
 				body {
 					overflow-x: hidden;
 				}
+
 				.header {
 					padding: 1.25rem 2rem;
 				}
+
 				.hero-image img {
 					width: 310px !important;
 				}
+
 				#phone-img {
 					display: none;
 				}
+
 				.stats {
 					padding: 4rem 2rem;
 				}
@@ -365,16 +374,20 @@
 					width: 100%;
 					max-width: 400px !important;
 				}
+
 				.stat-item h2 {
 					text-align: center;
 				}
+
 				.stat-item p {
 					text-align: center;
 				}
+
 				.stats-info {
 					text-align: center;
 				}
 			}
+
 			.footer {
 				background-color: var(--dark-bg);
 				padding: 4rem 2.5rem;
@@ -388,18 +401,22 @@
 				max-width: 1200px;
 				margin: 0 auto;
 			}
+
 			.footer-section {
 				min-width: 400px;
 			}
+
 			.footer-section:nth-child(1) {
 				display: flex;
 				flex-direction: column;
 				gap: 5px;
 			}
+
 			.footer-section img {
 				width: 170px;
 				cursor: pointer;
 			}
+
 			.footer-section h3 {
 				color: rgba(255, 255, 255, 0.7);
 				font-size: 0.9rem;
@@ -535,14 +552,17 @@
 					grid-template-columns: repeat(2, 1fr);
 					justify-items: center;
 				}
+
 				.footer-section:nth-child(3) {
 					display: flex;
 					align-items: center;
 					justify-content: space-between;
 				}
+
 				.stats-media img {
 					width: 390px;
 				}
+
 				.stat-item h2 {
 					font-size: 3rem;
 				}
@@ -566,161 +586,160 @@
 			<button class="sign-in-btn-head">Sign In</button>
 			<button class="hamburger">☰</button>
 		</header>
-
-		<main>
-			<section class="hero">
-				<div class="hero-content">
-					<h1>PREMIUM MUSIC DISTRIBUTION<br /></h1>
-					<p>
-						<img src="./images/check.svg" alt="" /> LABELS
-						<img src="./images/check.svg" alt="" /> INDEPENDENT ARTISTS
-						<img src="./images/check.svg" alt="" /> MUSIC INDUSTRY MANAGERS
-					</p>
-					<!-- <button class="sign-in-btn">Sign up</button> -->
-				</div>
-				<div class="hero-image">
-					<img
-						src="./images/laptop.png"
-						alt="Platform Preview"
-						id="laptop-img" />
-					<img src="./images/phone.png" alt="Platform Preview" id="phone-img" />
-				</div>
-			</section>
-
-			<section class="partners">
-				<h2>OUR PARTNERS</h2>
-				<div class="partner-grid">
-					<img src="./images/youtube.png" alt="Partner" class="partner-logo" />
-					<img src="./images/music.png" alt="Partner" class="partner-logo" />
-					<img
-						src="./images/facebook (1).png"
-						alt="Partner"
-						class="partner-logo" />
-					<img
-						src="./images/tiktok (1).png"
-						alt="Partner"
-						class="partner-logo" />
-					<img src="./images/spotify.png" alt="Partner" class="partner-logo" />
-
-					<!-- <i
-						class="fa-brands fa-youtube fa-2xl"
-						style="color: white; scale: 1.5"></i>
-					<i
-						class="fa-brands fa-apple fa-2xl"
-						style="color: white; scale: 1.5"></i>
-					<i
-						class="fa-brands fa-facebook fa-2xl"
-						style="color: white; scale: 1.5"></i>
-					<i
-						class="fa-brands fa-tiktok fa-2xl"
-						style="color: white; scale: 1.5"></i>
-					<i
-						class="fa-brands fa-spotify fa-2xl"
-						style="color: white; scale: 1.5"></i> -->
-				</div>
-				<div>
-					<h3 style="margin-top: 100px; font-size: 32px">
-						<!-- MONETIZE YOUR CREATIVITY EFFICIENTLY AND PROFITABLY WITH <br />
-						THE SINGLEAUDIO TEAM RIGHT NOW! -->
-						PROFIT FROM YOUR CREATIVITY EFFECTIVELY AND SUCCESSFULLY WITH
-						<br />THE SINGLEAUDIO TEAM TODAY!
-					</h3>
-					<p
-						style="
-							margin-top: 25px;
-							font-size: 17px;
-							line-height: 30px;
-							text-align: center;
-						">
-						SINGLEAUDIO is a top digital distributor, made up of a skilled team
-						of experts who share your work efficiently across all streaming<br />
-						platforms every day. Our music distribution service focuses on
-						supporting artists and offering a simple, fast-track delivery
-						system.<br />
-						Key advantages include quick releases, clear reporting, and
-						copyright assistance.
-					</p>
-				</div>
-			</section>
-
-			<section class="features">
-				<div class="features-grid">
-					<div class="feature-card">
-						<i
-							class="fa-solid fa-globe fa-2xl"
-							style="color: white; scale: 1.5; margin-bottom: 55px"></i>
-						<h3>80+ DSPs DELIVERY</h3>
-						<p>Content delivery across all platforms</p>
-					</div>
-					<div class="feature-card">
-						<i
-							class="fa-solid fa-music fa-2xl"
-							style="color: white; scale: 1.5; margin-bottom: 55px"></i>
-						<h3>PLAYLIST PROMO</h3>
-						<p>Pitching music to playlist editors</p>
-					</div>
-					<div class="feature-card">
-						<i
-							class="fa-solid fa-user-tie fa-2xl"
-							style="color: white; scale: 1.5; margin-bottom: 55px"></i>
-						<h3>LIVE HUMAN SUPPORT</h3>
-						<p>Fast support for all questions</p>
-					</div>
-					<div class="feature-card">
-						<i
-							class="fa-solid fa-chart-pie fa-2xl"
-							style="color: white; scale: 1.5; margin-bottom: 55px"></i>
-						<h3>ANALYTICS AND STATISTICS</h3>
-						<p>Monitoring of streams and activity in one place</p>
-					</div>
-					<div class="feature-card">
-						<i
-							class="fa-solid fa-money-check-dollar fa-2xl"
-							style="color: white; scale: 1.5; margin-bottom: 55px"></i>
-						<h3>EASY PAYOUTS</h3>
-						<p>Cards, wallets, and bank accounts</p>
-					</div>
-					<div class="feature-card">
-						<i
-							class="fa-solid fa-network-wired fa-2xl"
-							style="color: white; scale: 1.5; margin-bottom: 55px"></i>
-						<h3>PARTNER NETWORK</h3>
-						<p>Special offers from our partners</p>
-					</div>
-				</div>
-			</section>
-
-			<section class="stats">
-				<div class="stats-wrapper">
-					<div class="stats-content">
-						<div class="stats-info">
-							<div class="stats-header">
-								<h2 class="stats-title">SINGLEAUDIO IN<br />PERSONALITIES</h2>
-								<p class="stats-subtitle">
-									We are improving every day, and more and more people trust us
-								</p>
-							</div>
-							<div class="stats-numbers">
-								<div class="stat-item">
-									<h2>250,000+</h2>
-									<p>Delivered tracks</p>
-								</div>
-								<div class="stat-item">
-									<h2>35,000</h2>
-									<p>Users</p>
-								</div>
-							</div>
-							<button class="join-us-btn">Join Us</button>
-						</div>
-
-						<div class="stats-media">
-							<img src="./images/record-8329.gif" alt="" />
-						</div>
-					</div>
-				</div>
-			</section>
-		</main>
-
+		<div style="padding: 170px 50px">
+			<h1>Disclaimer</h1>
+			<p>Last updated: February 19, 2025</p>
+			<h2>Interpretation and Definitions</h2>
+			<h3>Interpretation</h3>
+			<p>
+				The words of which the initial letter is capitalized have meanings
+				defined under the following conditions. The following definitions shall
+				have the same meaning regardless of whether they appear in singular or
+				in plural.
+			</p>
+			<h3>Definitions</h3>
+			<p>For the purposes of this Disclaimer:</p>
+			<ul>
+				<li>
+					<strong>Company</strong> (referred to as either &quot;the
+					Company&quot;, &quot;We&quot;, &quot;Us&quot; or &quot;Our&quot; in
+					this Disclaimer) refers to SingleAudio.
+				</li>
+				<li><strong>Service</strong> refers to the Website.</li>
+				<li>
+					<strong>You</strong> means the individual accessing the Service, or
+					the company, or other legal entity on behalf of which such individual
+					is accessing or using the Service, as applicable.
+				</li>
+				<li>
+					<strong>Website</strong> refers to SingleAudio, accessible from
+					<a
+						href="https://music-qxq7.onrender.com/"
+						rel="external nofollow noopener"
+						target="_blank"
+						>https://music-qxq7.onrender.com/</a
+					>
+				</li>
+			</ul>
+			<h2>Disclaimer</h2>
+			<p>
+				The information contained on the Service is for general information
+				purposes only.
+			</p>
+			<p>
+				The Company assumes no responsibility for errors or omissions in the
+				contents of the Service.
+			</p>
+			<p>
+				In no event shall the Company be liable for any special, direct,
+				indirect, consequential, or incidental damages or any damages
+				whatsoever, whether in an action of contract, negligence or other tort,
+				arising out of or in connection with the use of the Service or the
+				contents of the Service. The Company reserves the right to make
+				additions, deletions, or modifications to the contents on the Service at
+				any time without prior notice. This Disclaimer has been created with the
+				help of the
+				<a
+					href="https://www.termsfeed.com/disclaimer-generator/"
+					target="_blank"
+					>Disclaimer Generator</a
+				>.
+			</p>
+			<p>
+				The Company does not warrant that the Service is free of viruses or
+				other harmful components.
+			</p>
+			<h2>External Links Disclaimer</h2>
+			<p>
+				The Service may contain links to external websites that are not provided
+				or maintained by or in any way affiliated with the Company.
+			</p>
+			<p>
+				Please note that the Company does not guarantee the accuracy, relevance,
+				timeliness, or completeness of any information on these external
+				websites.
+			</p>
+			<h2>Errors and Omissions Disclaimer</h2>
+			<p>
+				The information given by the Service is for general guidance on matters
+				of interest only. Even if the Company takes every precaution to ensure
+				that the content of the Service is both current and accurate, errors can
+				occur. Plus, given the changing nature of laws, rules and regulations,
+				there may be delays, omissions or inaccuracies in the information
+				contained on the Service.
+			</p>
+			<p>
+				The Company is not responsible for any errors or omissions, or for the
+				results obtained from the use of this information.
+			</p>
+			<h2>Fair Use Disclaimer</h2>
+			<p>
+				The Company may use copyrighted material which has not always been
+				specifically authorized by the copyright owner. The Company is making
+				such material available for criticism, comment, news reporting,
+				teaching, scholarship, or research.
+			</p>
+			<p>
+				The Company believes this constitutes a &quot;fair use&quot; of any such
+				copyrighted material as provided for in section 107 of the United States
+				Copyright law.
+			</p>
+			<p>
+				If You wish to use copyrighted material from the Service for your own
+				purposes that go beyond fair use, You must obtain permission from the
+				copyright owner.
+			</p>
+			<h2>Views Expressed Disclaimer</h2>
+			<p>
+				The Service may contain views and opinions which are those of the
+				authors and do not necessarily reflect the official policy or position
+				of any other author, agency, organization, employer or company,
+				including the Company.
+			</p>
+			<p>
+				Comments published by users are their sole responsibility and the users
+				will take full responsibility, liability and blame for any libel or
+				litigation that results from something written in or as a direct result
+				of something written in a comment. The Company is not liable for any
+				comment published by users and reserves the right to delete any comment
+				for any reason whatsoever.
+			</p>
+			<h2>No Responsibility Disclaimer</h2>
+			<p>
+				The information on the Service is provided with the understanding that
+				the Company is not herein engaged in rendering legal, accounting, tax,
+				or other professional advice and services. As such, it should not be
+				used as a substitute for consultation with professional accounting, tax,
+				legal or other competent advisers.
+			</p>
+			<p>
+				In no event shall the Company or its suppliers be liable for any
+				special, incidental, indirect, or consequential damages whatsoever
+				arising out of or in connection with your access or use or inability to
+				access or use the Service.
+			</p>
+			<h2>&quot;Use at Your Own Risk&quot; Disclaimer</h2>
+			<p>
+				All information in the Service is provided &quot;as is&quot;, with no
+				guarantee of completeness, accuracy, timeliness or of the results
+				obtained from the use of this information, and without warranty of any
+				kind, express or implied, including, but not limited to warranties of
+				performance, merchantability and fitness for a particular purpose.
+			</p>
+			<p>
+				The Company will not be liable to You or anyone else for any decision
+				made or action taken in reliance on the information given by the Service
+				or for any consequential, special or similar damages, even if advised of
+				the possibility of such damages.
+			</p>
+			<h2>Contact Us</h2>
+			<p>
+				If you have any questions about this Disclaimer, You can contact Us:
+			</p>
+			<ul>
+				<li>By email: info@singleaudio.com</li>
+			</ul>
+		</div>
 		<footer class="footer">
 			<div class="footer-content">
 				<div class="footer-section">
@@ -769,11 +788,10 @@
 					</div>
 				</div>
 			</div>
-			<div style="text-align: center; margin-top: 65px">
+			<div style="text-align: center; margin-top: 65px; color: white">
 				2025 © SINGLEAUDIO. All rights reserved.
 			</div>
 		</footer>
-
 		<div class="mobile-menu">
 			<button class="close-menu">×</button>
 			<nav>
