@@ -46,10 +46,11 @@
 				/* width: 100%; */
 				width: calc(100% - 0px);
 				/* background-color: rgba(18, 18, 18, 0.95); */
-				background-color: white;
+				background-color: transparent;
 				z-index: 1000;
-				border-bottom: 1px solid var(--button-border);
+				/* border-bottom: 1px solid var(--button-border); */
 				box-sizing: border-box;
+				transition: background-color 0.3s ease;
 			}
 
 			.logo {
@@ -62,7 +63,7 @@
 			}
 
 			.nav-links a {
-				color: var(--dark-bg);
+				color: var(--text-color);
 				text-decoration: none;
 				font-size: 0.9rem;
 				font-weight: 500;
@@ -80,12 +81,12 @@
 				padding: 1rem 1.75rem;
 				/* border: 1px solid var(--button-border); */
 				border-radius: 6px;
-				background: var(--dark-bg);
-				color: var(--text-color);
+				background: #fff;
+				color: #000;
 				cursor: pointer;
-				font-weight: 500;
+				font-weight: 800;
 				font-size: 0.9rem;
-				transition: all 0.3s ease;
+				transition: all 0.3sease;
 				/* border-color: var(--primary-color); */
 			}
 
@@ -128,12 +129,12 @@
 				position: relative;
 				overflow: hidden;
 				background-image: linear-gradient(
-						rgba(0, 0, 0, 0.1),
-						rgba(0, 0, 0, 0.1)
+						rgba(0, 0, 0, 0.7),
+						rgba(0, 0, 0, 0.7)
 					),
-					url("./images/bg1.jpeg");
+					url("./images/single-audio-hero-bg.jpg");
 				background-size: cover;
-				background-position: center;
+				background-position: center center;
 			}
 
 			.hero-content {
@@ -344,12 +345,12 @@
 					display: none;
 				}
 				.stats {
-					padding: 4rem 2rem;
+					padding: 3rem 2rem;
 				}
 
 				.stats-content {
 					flex-direction: column;
-					gap: 3rem;
+					gap: 0rem;
 				}
 
 				.stats-numbers {
@@ -358,14 +359,14 @@
 				}
 
 				.stats-title {
-					font-size: 2.3rem;
+					font-size: 2rem;
 					text-align: center;
 				}
 
-				.stats-media video {
+				/* .stats-media video {
 					width: 100%;
 					max-width: 400px !important;
-				}
+				} */
 				.stat-item h2 {
 					text-align: center;
 				}
@@ -376,11 +377,13 @@
 					text-align: center;
 				}
 				.footer-section {
-					min-width: 230px !important;
+					min-width: 20px !important;
+					gap: 20px;
 				}
 				.footer-section:nth-child(1) {
 					align-items: center;
 				}
+
 				.footer-content {
 					justify-content: center;
 				}
@@ -392,8 +395,9 @@
 			}
 
 			.footer-content {
-				display: grid;
-				grid-template-columns: 1fr 1fr 1fr;
+				/* display: grid;
+				grid-template-columns: 1fr 1fr 1fr; */
+				display: flex;
 				gap: 4rem;
 				max-width: 1200px;
 				margin: 0 auto;
@@ -434,7 +438,7 @@
 				font-size: 1.9rem;
 				background: none;
 				border: none;
-				color: var(--dark-bg);
+				color: var(--text-color);
 				cursor: pointer;
 			}
 
@@ -537,7 +541,7 @@
 				}
 
 				.footer-content {
-					grid-template-columns: 1fr;
+					flex-direction: column;
 					gap: 2rem;
 				}
 				.partners {
@@ -556,11 +560,14 @@
 					justify-content: space-between;
 				}
 				.stats-media img {
-					width: 390px;
+					width: 100%;
 				}
 				.stat-item h2 {
 					font-size: 3rem;
 				}
+			}
+			.header.scrolled {
+				background-color: #000000; /* Black background when scrolled */
 			}
 		</style>
 	</head>
@@ -568,7 +575,7 @@
 		<header class="header">
 			<div class="logo">
 				<a href="/" style="cursor: pointer">
-					<img src="./images/logo2.png" alt="SINGLEAUDIO" style="width: 90px"
+					<img src="./images/newlogo.jpg" alt="SINGLEAUDIO" style="width: 90px"
 				/></a>
 			</div>
 
@@ -729,7 +736,7 @@
 									<p>Users</p>
 								</div>
 							</div>
-							<button class="join-us-btn">Join Us</button>
+							<button class="sign-in-btn-head">Join Us</button>
 						</div>
 
 						<div class="stats-media">
@@ -764,7 +771,7 @@
 						artists and creators amplify their reach.
 					</p>
 				</div>
-				<div style="display: flex; align-items: start">
+				<div style="display: flex; align-items: start; gap: 52px">
 					<div class="footer-section">
 						<!-- <h3>SINGLEAUDIO</h3> -->
 						<!-- <p>
@@ -825,6 +832,16 @@
 			closeMenu.addEventListener("click", () => {
 				mobileMenu.classList.remove("active");
 				document.body.style.overflow = ""; // Restore scrolling
+			});
+			const header = document.querySelector(".header");
+
+			window.addEventListener("scroll", () => {
+				if (window.scrollY > 50) {
+					// Change background after scrolling 50px
+					header.classList.add("scrolled");
+				} else {
+					header.classList.remove("scrolled");
+				}
 			});
 		</script>
 		<script
